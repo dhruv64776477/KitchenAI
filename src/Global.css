@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+
+ :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff9f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.btn-filter {
+  @apply ml-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md backdrop-blur-sm border-none ;
+}
+
+/* Dark Mode Buttons */
+.dark-btn {
+  @apply bg-green-700/80 text-white hover:bg-green-800/90 shadow-lg;
+}
+
+/* Light Mode Buttons */
+.light-btn {
+  @apply bg-green-400/80 text-white hover:bg-green-500/90 shadow-lg;
+}
+
+/* Active button (selected state) */
+.active-btn {
+  @apply ring-2 ring-white scale-100;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #22c55e; /* Green color */
+  border-radius: 4px; /* Rounded edges */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a; /* Darker green on hover */
+}
+
+/* For Firefox */
+
+
+/* Kitchen item floating animations */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.kitchen-item {
+  animation: float 8s infinite ease-in-out;
+}
+
+.kitchen-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.kitchen-item:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.kitchen-item:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.kitchen-item:nth-child(4) {
+  animation-delay: 6s;
+}
+
+/* Swipe up animation */
+@keyframes swipeUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.swipe-up {
+  animation: swipeUp 1s ease-in-out forwards;
+}
+
+/* Pulse animation for fridge items */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

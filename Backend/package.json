@@ -1,0 +1,56 @@
+{
+  "name": "kitchenapi",
+  "version": "1.0.0",
+  "description": "A project inspired by YouTube",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongoose",
+    "express"
+  ],
+  "author": "Dhruv Singh Kushwaha",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@paypal/paypal-server-sdk": "latest",
+    "@sendgrid/mail": "latest",
+    "bcryptjs": "latest",
+    "cloudinary": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-async-errors": "latest",
+    "express-fileupload": "latest",
+    "express-mongo-sanitize": "latest",
+    "express-rate-limit": "latest",
+    "express-session": "^1.18.1",
+    "express-validator": "latest",
+    "helmet": "latest",
+    "hpp": "^0.2.3",
+    "http-status-codes": "latest",
+    "jimp": "^0.16.1",
+    "joi": "latest",
+    "jsonwebtoken": "latest",
+    "moment": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "multer": "^1.4.5-lts.2",
+    "nodemailer": "latest",
+    "passport": "latest",
+    "passport-google-oauth20": "latest",
+    "passport-local": "^1.0.0",
+    "tesseract.js": "^6.0.0",
+    "validator": "latest",
+    "winston": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest",
+    "prettier": "latest"
+  }
+}
